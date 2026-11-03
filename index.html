@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>나의 To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="app">
+
+        <!-- 제목 영역 -->
+        <header class="header">
+            <h1>오늘의 할 일</h1>
+            <p>한 가지씩, 차근차근 완료해 보자.</p>
+        </header>
+
+        <!-- 할 일 입력 영역 -->
+        <section class="input-area">
+            <label for="task-input" class="sr-only">새 할 일</label>
+
+            <input
+                type="text"
+                id="task-input"
+                placeholder="할 일을 입력하세요"
+                maxlength="50"
+            >
+
+            <button type="button" id="add-btn">추가</button>
+        </section>
+
+        <!-- 할 일 목록 영역 -->
+        <section class="list-area">
+            <h2>할 일 목록</h2>
+
+            <ul id="task-list" class="task-list"></ul>
+
+            <p id="empty-message" class="empty-message">
+                할 일을 추가해 보세요!
+            </p>
+
+            <p id="task-count">전체 0개 · 완료 0개</p>
+        </section>
+
+    </main>
+</body>
+</html>
